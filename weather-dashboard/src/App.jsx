@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 
-
 /** helper to fetch weather */
 async function fetchWeather(city) {
   const key = import.meta.env.VITE_WEATHER_API_KEY;
@@ -170,7 +169,7 @@ export default function App() {
 
         <main className="mx-auto flex flex-col items-center">
           <div className="w-full max-w-xl card-glass">
-            <SearchBar  onSearch={(c) => doSearch(c)} initial={city} />
+            <SearchBar onSearch={(c) => doSearch(c)} initial={city} />
 
             <div className="mt-4 flex items-center gap-3">
               <button
